@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 구조 선택자</title>
+    <style>
+        /* 구조선택자 : 바디는 생략 가능함 . */ 
+        body> ul:nth-child(2)>li:first-child {
+            color: blue;
+        }
+        /* ul 중 첫번째  자식 */
+        ul:nth-of-type(1)>li:nth-child(2){
+            color: green;
+        }
+
+        ul:nth-of-type(1)>li:last-child{
+            color: orange;
+        }
+
+        ul:nth-of-type(2)>li:first-child{
+            color: magenta;
+        }
+        
+        ul:nth-child(3)>li:nth-child(2){
+            color: mediumpurple;
+        }
+
+        ul:nth-of-type(2) > li:last-child{
+            color: navy;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>3. 구조선택자</h3>
+
+
+    <ul>
+        <li>서울</li> 
+        <li>대전</li>
+        <li>대구</li>
+        <li>부산</li>
+        <li>광주</li>
+    </ul>
+    <ul>
+        <li>한국</li>
+        <li>미국</li>
+        <li>중국</li>
+        <li>일본</li>
+        <li>독일</li>
+    </ul>
+
+</body>
+</html>
