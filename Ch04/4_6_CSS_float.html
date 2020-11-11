@@ -4,12 +4,20 @@
     <meta charset="UTF-8">
     <title>float 속성</title>
     <style>
+
         /* 
           float 속성
            - 태그 요소를 부모영역에서 띄운 후 왼쪽, 오른쪽으로 이동하는 속성
            - block 태그를 가로 정렬할 때 많이 사용
 
 
+           clear 속성
+           - float 된 태그요소의 현재 left, right 방향을 해제 후 새로 줄 바꿈
+
+
+           float과 overflow 관계설정
+           -  float 된 태그요서의 부모영역에 overflow: hidden 적용으로 부모영역 높이 설정
+           
          */
         
         
@@ -38,7 +46,7 @@
          .box1 > div:nth-child(6){float: right;}
 
 
-         .box2 > div {display: inline-block;}
+         .box2 > div {float: left;}
          .box2 > div:nth-child(1){}
          .box2 > div:nth-child(2){}
          .box2 > div:nth-child(3){}
